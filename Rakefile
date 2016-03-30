@@ -28,8 +28,8 @@ task :deploy do
   puts '=> Disallow robots...'.magenta
   #File.open('robots.txt', 'w') { |file| file.write "User-agent: *\n" }
 
-  puts '=> Change CNAME...'.magenta
-  File.open('CNAME', 'w') { |file| file.write 'herewebuy.org' }
+  #puts '=> Change CNAME...'.magenta
+  #File.open('CNAME', 'w') { |file| file.write 'herewebuy.org' }
 
   puts '=> Add everything...'.magenta
   system 'git add --all'
