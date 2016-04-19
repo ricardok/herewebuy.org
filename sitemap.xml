@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -14,7 +17,7 @@
   <url>
     <!-- <loc>http://www.herewebuy.org/{{ page.url }}{{ post.url }}</loc> -->
     <loc>{% if post.link %}{{ post.link }}{% else %}{{ site.url }}{{ post.url }}{% endif %}</loc>
-    <lastmod>{{ post.modified | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ post.modified | to_xmlschema }}T00:00:00-00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 {% endfor %}
