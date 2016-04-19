@@ -4,11 +4,18 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://herewebuy.org/</loc>
-  <lastmod>2016-03-29T02:17:58+00:00</lastmod>
+  <loc>http://www.herewebuy.org/</loc>
+  <lastmod>2016-04-18T02:17:58+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
+{% for post in site.posts %}
+  <url>
+    <!-- <loc>http://www.herewebuy.org/{{ page.url }}{{ post.url }}</loc> -->
+    <loc>{% if post.link %}{{ post.link }}{% else %}{{ site.url }}{{ post.url }}{% endif %}</loc>
+    <lastmod>{{ post.modified | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+{% endfor %}
 </urlset>

@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.3.0'
-
-gem 'github-pages' , '45'
-gem 'foreman',       '0.78.0'
-gem 'i18n',          '0.7.0'
-gem 'colored',       '1.2'
-gem 'rake',          '10.5.0'
+gem 'github-pages'
+gem 'octopress', '~> 3.0.0.rc.12'
+gem 'foreman'
+gem 'i18n'
+gem 'colored'
+gem 'rake'
 gem 'scss_lint', require: false
