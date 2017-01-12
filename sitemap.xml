@@ -9,7 +9,7 @@ layout: null
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://www.herewebuy.org/</loc>
+  <loc>https://www.herewebuy.org/</loc>
   <lastmod>2016-04-18T02:17:58+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
